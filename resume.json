@@ -1,0 +1,489 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "basics": {
+        "name": "Oleksandr Chumachov",
+        "label": "Architect / Lead / Developer",
+        "image": "https://avatars.githubusercontent.com/u/1453383",
+        "email": "dionis2384@gmail.com",
+        "phone": "+43 677 610 47776",
+        "url": "",
+        "summary": " Great architectural, programming and leadership experience\n• Full stack knowledge with: AWS, Docker, Java, JavaScript, Linux/Shell, SQL/RDBMS,\nnoSQL etc\n• Self-motivated, goal oriented, code pedantic, fast, skilled in management, domain oriented.",
+        "location": {
+            "countryCode": "AT",
+            "postalCode": "8051",
+            "city": "Graz",
+            "region": "Styria"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "oleksandr-chumachov-a030776",
+                "url": "https://www.linkedin.com/in/oleksandr-chumachov-a030776/"
+            },
+            {
+                "network": "GetHub",
+                "username": "achumachev",
+                "url": "https://github.com/achumachev"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Ukrainian Processing Center",
+            "description": "Raiffeisen Bank International Group",
+            "position": "Solutions Architect",
+            "startDate": "2023-02-01",
+            "summary": "Architectural solutions, Team management, Code review, Integrations with internal and 3rd party systems",
+            "highlights": [
+                "Microservices",
+                "Kafka",
+                "AWS",
+                "Docker, K8N",
+                "Java, JavaScript/TypeScript, Python",
+                "PostgreSQL, DynamoDB, S3, Redis, Prometheus",
+                "gradle, maven",
+                "git"
+            ],
+            "url": "https://www.linkedin.com/company/jsc-ukrainian-processing-center-/",
+            "location": "Remote"
+        },
+        {
+            "name": "Reach Financial",
+            "position": "Java Developer / Architect",
+            "startDate": "2021-04-01",
+            "endDate": "2023-01-31",
+            "description": "Personal Finance Manager mobile application",
+            "summary": "Architectural solutions, Development new functionality, Bug fixing, Code review, Integrations with 3rd party systems",
+            "highlights": [
+                "Microservices",
+                "Kafka",
+                "AWS: EKS, EC2, KMS, MKS, S3, etc",
+                "Java: Spring, Hibernate, JPA etc",
+                "Gradle",
+                "MySQL, Redis, Prometheus",
+                "Docker, K8N",
+                "git"
+            ],
+            "url": "https://www.linkedin.com/company/reach-financial/",
+            "location": "Remote"
+        },
+        {
+            "name": "Lexalytics, Inc. an InMoment Company",
+            "description": "SaaS for NLP, Chatbot etc",
+            "position": "Architect / Software Developer",
+            "summary": "Architectural solutions, Total re-design and then implement of the system with splitting monolith to microservices, Develop administrative web portals",
+            "startDate": "2016-08-01",
+            "endDate": "2021-04-30",
+            "highlights": [
+                "Microservices",
+                "SaaS",
+                "AWS",
+                "Java(Spring, Hibernate, MyBatis etc)",
+                "JS (typescript, angularJS, nodeJs, npm)",
+                "C++",
+                "C#, Excel Plugin",
+                "Maven",
+                "Postgresql, MariaDB, Redis, InfluxDB, Prometheus",
+                "Docker",
+                "RabbitMQ",
+                "Chef, knife, shell",
+                "svn, git"
+            ],
+            "url": "https://www.linkedin.com/company/lexalytics/",
+            "location": "Remote"
+        },
+        {
+            "name": "Omnigon Communications LLC",
+            "position": "Dev Lead / Software Engineer / Tech Lead",
+            "description": "Huge CQ golf portal, Cloud data sync and processing service, Site for one of the biggest indoor arena in NY, other small sites with grails mostly with sport thematics",
+            "startDate": "2012-04-30",
+            "endDate": "2016-08-31",
+            "highlights": [
+                "AWS: EC2, S3, DynamoDB",
+                "shell",
+                "mvn",
+                "CQ/AEM",
+                "java (Spring, Hibernate etc)",
+                "Groovy",
+                "MongoDB",
+                "JS (canJS, requireJS, JQuery, etc)",
+                "HTML/CSS (LESS and SASS)",
+                "Zookeeper",
+                "svn, git"
+            ],
+            "summary": "Architecture solutions, Task planning, Development, Code review, DevOps support, Meeting with clients and involving in functional decisions",
+            "url": "https://www.linkedin.com/company/omnigon-communications-llc/",
+            "location": "Remote, New York, Los Angeles"
+        },
+        {
+            "name": "Krusche & Company",
+            "position": "Java (LifeRay) Developer",
+            "description": "Social network with orientation to car owners, Gambling server",
+            "startDate": "2011-12-31",
+            "endDate": "2012-04-30",
+            "highlights": [
+                "Java (spring, hibernate)",
+                "Liferay",
+                "Javascript",
+                "Ant"
+            ],
+            "summary": "Features development, Bug fixing",
+            "url": "https://kruschecompany.com/de/",
+            "location": "Mykolaiv"
+        },
+        {
+            "name": "Sintez Technologies",
+            "position": "Team lead / Architect / Manager / Java Developer",
+            "description": "Gambling server",
+            "startDate": "2010-01-31",
+            "endDate": "2011-12-31",
+            "highlights": [
+                "Java (EE, EJB, Servlet, GWT, Vaadin)",
+                "GlassFish",
+                "Flash/Flex",
+                "Postresql",
+                "Maven",
+                "linux, shell",
+                "svn, git"
+            ],
+            "summary": "Features planning and development, Sprint planning, Task management, Documentation writing, Communications with project owners",
+            "url": "https://www.linkedin.com/company/sintez-technologies/",
+            "location": "Mykolaiv"
+        },
+        {
+            "name": "GeeksForLess",
+            "position": "Java Developer / Software Architect / Team Lead",
+            "description": "Online billing and accounting system, Animals online guide, Backend for mobile social network, Java installer for an indexing and search application",
+            "startDate": "2008-11-30",
+            "endDate": "2010-12-31",
+            "highlights": [
+                "Java (Spring, EE, GWT, Echo, Jsp, Servlets, Hibernate)",
+                "Maven",
+                "linux, shell",
+                "MySQL, Oracle",
+                "SVN, GIT, Jira, Maven, Ant"
+            ],
+            "summary": "Task management, team leading (code review, helping with studies etc), Architecture solutions, Feature development & bug fixing",
+            "url": "https://www.linkedin.com/company/geeksforless/",
+            "location": "Mykolaiv"
+        },
+        {
+            "name": "TemplateMonster.com",
+            "position": "Java Developer",
+            "startDate": "2008-06-30",
+            "endDate": "2008-11-30",
+            "highlights": [
+                "Java (EE, EJB, JPA, GWT, Struts, JSP, Servlets)",
+                "MySQL",
+                "SVN, CVS",
+                "linux",
+                "JBoss",
+                "ant"
+            ],
+            "summary": "Development java application sites.",
+            "url": "https://www.linkedin.com/company/templatemonster/",
+            "location": "Mykolaiv"
+        },
+        {
+            "name": "TemplateMonster.com",
+            "position": "Interface programmer's Department Manager",
+            "startDate": "2007-06-30",
+            "endDate": "2008-06-30",
+            "highlights": [],
+            "summary": "Mostly supervising. From time-to-time development on PHP and Java EE, Html, CSS",
+            "url": "https://www.linkedin.com/company/templatemonster/",
+            "location": "Mykolaiv"
+        },
+        {
+            "name": "TemplateMonster.com",
+            "position": "Interface programmer",
+            "startDate": "2006-11-30",
+            "endDate": "2007-06-30",
+            "highlights": [
+                "HTML, CSS",
+                "JavaScript",
+                "PHP",
+                "Java (EE, EJB, JPA, GWT, Struts, JSP, Servlets)"
+            ],
+            "summary": "Front end development with small part of PHP and Java EE",
+            "url": "https://www.linkedin.com/company/templatemonster/",
+            "location": "Mykolaiv"
+        }
+    ],
+    "volunteer": [],
+    "education": [
+        {
+            "institution": "National University of Shipbuilding",
+            "area": "Information systems and technologies",
+            "studyType": "",
+            "url": "https://www.nuos-international.com.ua",
+            "startDate": "2001-09-01",
+            "endDate": "2007-02-28",
+            "score": "",
+            "courses": []
+        }
+    ],
+    "awards": [],
+    "publications": [],
+    "skills": [
+        {
+            "name": "Architecture",
+            "keywords": [
+                "Microservices",
+                "UML",
+                "C4",
+                "Streaming",
+                "Messaging",
+                "Pub/Sub",
+                "Cloud",
+                "Event Driven Architecture",
+                "CAP",
+                "SaaS",
+                "PaaS",
+                "CQRS",
+                "Saga",
+                "Sharding",
+                "Replication",
+                "Scaling",
+                "Tracing",
+                "OAuth",
+                "OpenAPI",
+                "AsyncAPI",
+                "Cloud Computing"
+            ]
+        },
+        {
+            "name": "Programming Languages",
+            "keywords": [
+                "Java",
+                "Kotlin",
+                "Groovy",
+                "JavaScript",
+                "TypeScript",
+                "Python",
+                "SQL",
+                "sh",
+                "C++",
+                "C$",
+                "PHP"
+            ]
+        },
+        {
+            "name": "JVM",
+            "keywords": [
+                "Spring",
+                "Spring MVC",
+                "Spring Security",
+                "Spring Data",
+                "Spring Cloud",
+                "Hibernate",
+                "JUnit",
+                "J2EE",
+                "JDBC",
+                "JMS",
+                "JPA",
+                "JSP",
+                "Servlets",
+                "JAXB",
+                "JAX-RS",
+                "Apache Camel",
+                "Tomcat",
+                "JBoss",
+                "GlassFish",
+                "Struts",
+                "GWT",
+                "Echo"
+            ]
+        },
+        {
+            "name": "Build tools",
+            "keywords": [
+                "npm",
+                "Gradle",
+                "Maven",
+                "Make",
+                "Ant"
+            ]
+        },
+        {
+            "name": "Backend Development",
+            "keywords": [
+                "Object-oriented programming",
+                "Test Driven Development",
+                "GRASP",
+                "SOLID"
+            ]
+        },
+        {
+            "name": "Web",
+            "keywords": [
+                "HTML",
+                "CSS",
+                "XML",
+                "XSLT",
+                "XPath",
+                "JSON",
+                "AJAX",
+                "GraphQL",
+                "WebSockets",
+                "Angular",
+                "JQuery",
+                "canJS",
+                "prototypejs"
+            ]
+        },
+        {
+            "name": "Databases",
+            "keywords": [
+                "Postgres",
+                "MySQL",
+                "Oracle DB",
+                "MariaDB",
+                "MongoDB",
+                "DynamoDB",
+                "InfluxDB",
+                "Prometheus",
+                "Redis",
+                "Casandra",
+                "Neo4j"
+            ]
+        },
+        {
+            "name": "Source Control",
+            "keywords": [
+                "Git",
+                "CVS",
+                "SVN"
+            ]
+        },
+        {
+            "name": "Amazon Web Services (AWS)",
+            "level": "",
+            "keywords": [
+                "EC2",
+                "IAM",
+                "S3",
+                "EKS",
+                "MKS",
+                "KMS",
+                "ELB",
+                "Route 53",
+                "Lambda",
+                "DynamoDB",
+                "ElastiCache",
+                "etc"
+            ]
+        },
+        {
+            "name": "Messaging and other",
+            "keywords": [
+                "Kafka",
+                "RabbitMQ",
+                "ActiveMQ",
+                "Kafka Streams",
+                "Zookeeper"
+            ]
+        },
+        {
+            "name": "Containerization",
+            "keywords": [
+                "Docker",
+                "Kubernetes"
+            ]
+        },
+        {
+            "name": "CI/CD",
+            "level": "",
+            "keywords": [
+                "Jenkins",
+                "Bamboo",
+                "TeamCity"
+            ]
+        },
+        {
+            "name": "Etc",
+            "keywords": [
+                "Grafana",
+                "Jira",
+                "Confluence"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Fluent"
+        },
+        {
+            "language": "Russian",
+            "fluency": "Native"
+        },
+        {
+            "language": "Ukrainian",
+            "fluency": "Native"
+        },
+        {
+            "language": "German",
+            "fluency": "Beginner"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Sports Fan",
+            "keywords": [
+                "Football",
+                "American Football",
+                "Basketball"
+            ]
+        },
+        {
+            "name": "IoT",
+            "keywords": [
+                "ESP32",
+                "Arduino",
+                "Electronics",
+                "Microcontrollers"
+            ]
+        },
+        {
+            "name": "Etc",
+            "keywords": [
+                "Audiobooks",
+                "Movies & TV",
+                "Hiking"
+            ]
+        }
+    ],
+    "references": [],
+    "projects": [
+        {
+            "url": "https://www.templates.com",
+            "description": "Online shop of digital works"
+        },
+        {
+            "url": "https://www.templatemonster.com",
+            "description": "Biggest web templates online shop"
+        },
+        {
+            "name": "audubon",
+            "url": "https://www.audubon.org",
+            "description": "Online bio encyclopedia"
+        },
+        {
+            "name": "semantria",
+            "url": "https://www.lexalytics.com/semantria/",
+            "description": "NLP SaaS"
+        },
+        {
+            "name": "pgatour.com",
+            "startDate": "2013-02-28",
+            "description": "Official Golf Portal",
+            "url": "https://www.pgatour.com/"
+        }
+    ],
+    "meta": {
+        "version": "v1.0.0",
+        "theme": "flat",
+        "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+    }
+}
