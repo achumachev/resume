@@ -416,11 +416,11 @@
         },
         {
             "language": "Russian",
-            "fluency": "Native"
+            "fluency": "Native speaker"
         },
         {
             "language": "Ukrainian",
-            "fluency": "Native"
+            "fluency": "Native speaker"
         },
         {
             "language": "German",
@@ -454,29 +454,37 @@
             ]
         }
     ],
+    "certificates": [
+        {
+            "name": "M101J: MongoDB for Java Developers",
+            "issuer": "10gen",
+            "url": "http://education.10gen.com/downloads/certificates/97e05ceeddc8405b82137c52b03bbe71/Certificate.pdf"
+        }
+    ],
     "references": [],
     "projects": [
         {
+            "name": "T.com",
             "url": "https://www.templates.com",
             "description": "Online shop of digital works"
         },
         {
+            "name": "TemplateMonster",
             "url": "https://www.templatemonster.com",
             "description": "Biggest web templates online shop"
         },
         {
-            "name": "audubon",
+            "name": "Audubon",
             "url": "https://www.audubon.org",
             "description": "Online bio encyclopedia"
         },
         {
-            "name": "semantria",
+            "name": "Semantria",
             "url": "https://www.lexalytics.com/semantria/",
             "description": "NLP SaaS"
         },
         {
-            "name": "pgatour.com",
-            "startDate": "2013-02-28",
+            "name": "PGATour.com",
             "description": "Official Golf Portal",
             "url": "https://www.pgatour.com/"
         }

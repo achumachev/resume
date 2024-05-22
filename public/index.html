@@ -1,0 +1,1567 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Oleksandr Chumachov</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+  <style>
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  color: #40484f;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.46153846;
+  text-align: left;
+}
+
+p {
+  display: block;
+}
+
+a {
+  color: #0095ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0c65a5;
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: outside;
+  margin-left: 1.3em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.67rem;
+}
+
+h3 {
+  font-size: 1.27rem;
+}
+
+em {
+  color: #757575;
+}
+
+blockquote {
+  margin-bottom: 1em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* main container */
+
+#resume {
+  padding: 1.5rem;
+}
+
+/* every section wrapper */
+
+.section {
+  margin-bottom: 1rem;
+}
+
+section .location {
+  margin-right: 0.5em;
+  color: #606d76;
+  font-weight: 700;
+}
+
+#contact {
+  margin-top: 0.5rem;
+}
+
+#profiles .item {
+  padding: 0;
+}
+
+#header > #profiles,
+#header > #contact,
+#skills,
+#languages,
+#interests {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+#header > div {
+  line-height: 1.5;
+}
+
+#header > div > div {
+  margin-right: 1.2em;
+}
+
+#header h1.name {
+  font-size: 2.8rem;
+  font-weight: 100;
+  line-height: 100%;
+}
+
+#header h2.label {
+  color: #202931;
+  font-size: 1.47rem;
+  font-weight: 300;
+}
+
+#header .image {
+  width: 11em;
+  float: right;
+  border-radius: 4px;
+}
+
+.main-summary {
+  background: #f1f8ff;
+  padding: 1.2em 1em;
+  margin-top: 1rem;
+}
+
+.main-summary p {
+  margin: 0;
+}
+
+.section-title {
+  display: inline-block;
+  background: #fff;
+  padding: 0 1em 0.3em 0;
+  color: #ff6d1f;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.section > header {
+  position: relative;
+}
+
+.fa {
+  margin-right: 0.25em;
+}
+
+.section > header::after {
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  height: 1px;
+  background: #ccc;
+  content: "";
+  width: 100%;
+  z-index: -100;
+  display: block;
+}
+
+.section.main-summary > section {
+  margin: 0;
+}
+
+.section > section > header {
+  font-size: 1.38rem;
+  position: relative;
+  margin-top: 0.7em;
+}
+
+.section > section > header:first-of-type {
+  margin: 0;
+}
+
+.section > section > header .space-left {
+  position: absolute;
+  left: -1.56rem;
+  top: 5px;
+  color: #aaa;
+  line-height: 1;
+  opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+  display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+  font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+  content: "at ";
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+  color: #606d76;
+  font-weight: 400;
+}
+
+.section header .date {
+  display: block;
+  font-size: 1rem;
+  padding: 0.1em 0;
+  color: #606d76;
+  font-weight: 400;
+}
+
+.keywords,
+.courses {
+  margin: 0.5em 0;
+}
+
+.keywords li,
+.courses li {
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  padding: 4px 5px 5px;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #3e6d8e;
+  background-color: #dfeaf1;
+  border: 0 solid #dfeaf1;
+  white-space: nowrap;
+}
+
+.keywords li:hover,
+.courses li:hover {
+  background: #dfeaf0;
+}
+
+.highlights {
+  margin: 1em 0 0 0;
+}
+
+.highlights > li > p {
+  margin-bottom: 0.5em;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.gpa {
+  clear: both;
+  padding-bottom: 0.5em;
+}
+
+.fa.social {
+  font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+
+.google-plus {
+  color: #dd4b39;
+}
+
+.tumblr {
+  color: #32506d;
+}
+
+.foursquare {
+  color: #0072b1;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.linkedin {
+  color: #007bb6;
+}
+
+.pinterest {
+  color: #cb2027;
+}
+
+.dribbble {
+  color: #ea4c89;
+}
+
+.instagram {
+  color: #517fa4;
+}
+
+.twitter {
+  color: #00aced;
+}
+
+.soundcloud {
+  color: #ff3a00;
+}
+
+.wordpress {
+  color: #21759b;
+}
+
+.youtube {
+  color: #bb0000;
+}
+
+.github {
+  color: #171515;
+}
+
+.stack-overflow {
+  color: #828386;
+  position: relative;
+}
+
+.flickr {
+  color: #ff0084;
+}
+
+.reddit {
+  color: #ff4500;
+}
+
+.hacker-news {
+  color: #ff6600;
+}
+
+.stack-overflow::after {
+  position: absolute;
+  left: 0;
+  content: "\f16c";
+  color: #f68a1f;
+  overflow: hidden;
+  height: 100%;
+}
+
+.telegram {
+  color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+  width: 15em;
+  padding: 0 0.5em 0.5em 0;
+  border-bottom: none;
+}
+
+#skills .item {
+  width: 16em;
+}
+
+#skills .item .keywords {
+  width: 15em;
+}
+
+/* Skill chart */
+
+.level {
+  margin-bottom: 0.5em;
+}
+
+.level em {
+  padding-left: 0.2em;
+}
+
+.level .bar {
+  border: 1px solid #ddd;
+  display: block;
+  width: 10em;
+  height: 5px;
+  position: relative;
+}
+
+.level .bar::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  background: black;
+  height: 5px;
+}
+
+.level.beginner .bar::after {
+  background: #eb5f51;
+  width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+  background: #ffdf1f;
+  width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+  background: #5cb85c;
+  width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+  background: #59c596;
+  width: 10em;
+}
+
+#references .item {
+  padding-left: 0.5em;
+  border-left: 5px solid #ff6d1f;
+}
+
+.section > section > section {
+  margin-bottom: 1rem;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display {
+  display: block;
+  opacity: 1 !important;
+}
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+  #resume {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section header .date {
+    float: right;
+    font-weight: 600;
+    color: #000;
+  }
+}
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+  li {
+    margin-left: 1.5em;
+  }
+  #resume {
+    width: 820px;
+    margin: 2rem auto;
+  }
+  .section > section > header .space-left {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .section > section:not(.main-summary) {
+    margin-left: 1.67rem;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "| ";
+  }
+  .header-left {
+    float: left;
+    width: 70%;
+    word-break: normal;
+  }
+  .section header .date {
+    padding: 0.2em;
+  }
+  .display {
+    display: none;
+  }
+  .display:not(.none) {
+    display: block;
+  }
+}
+
+@media print {
+  #profiles a:not(.hide-href-print)::after{
+    content: " (" attr(href) ") ";
+  }
+  #resume {
+    margin: 0.1em;
+    padding: 0.1em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.25;
+  }
+  @page {
+    margin: 1cm 1.4cm;
+  }
+  .item-count {
+    display: none;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "at ";
+  }
+  .main-summary {
+    padding: 0;
+    background: transparent;
+  }
+  .section {
+    margin: 0.8rem 0;
+    padding: 0;
+  }
+  .section header {
+    padding-bottom: 0.15rem;
+  }
+  .section .location {
+    padding-bottom: 0.15rem;
+  }
+  .section > section > section {
+    margin: 0 0 1em 0;
+  }
+  .section > section > section:last-of-type {
+    margin: 0;
+  }
+  .stack-overflow::after {
+    content: "";
+  }
+  .fa.social {
+    color: #828386;
+  }
+  ul {
+    margin-top: 0.4em;
+  }
+  ul,
+  li {
+    padding: 0;
+  }
+  ul.keywords li,
+  ul.courses li {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    background: transparent;
+  }
+  ul.keywords li::after,
+  ul.courses li::after {
+    padding: 0 0 0 0.1rem;
+    content: " |";
+  }
+  ul.keywords::before,
+  ul.courses::before {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  #skills .item {
+    width: calc(100% / 3);
+    padding: 0;
+  }
+  .highlights {
+    margin: 0.5em 0 0 0;
+  }
+  ul.keywords::before {
+    content: "Skills acquired: ";
+  }
+  #skills .keywords::before {
+    content: none;
+  }
+  .section p {
+    margin: 0;
+    padding: 0;
+  }
+  ul.courses::before {
+    content: "Major courses: ";
+  }
+  ul.keywords li:last-of-type::after,
+  ul.courses li:last-of-type::after {
+    content: "";
+  }
+  .level em {
+    font-style: normal;
+    padding: 0.1em 0;
+  }
+  .level .bar {
+    display: none;
+  }
+  #profiles .item {
+    padding: 0;
+  }
+  .item.display {
+    display: block;
+    opacity: 1 !important;
+  }
+  .fa-map-marker-alt:before {
+    padding-left: 0.1em;
+  }
+}
+
+  </style>
+  
+  </head>
+  <body>
+  
+  <div id="resume">
+    	<header id="header" class="clear">
+    		<img class="image" src="https://avatars.githubusercontent.com/u/1453383" alt="Oleksandr Chumachov" />
+    		<div class="middle">
+    			<h1 class="name">Oleksandr Chumachov</h1>
+    			<h2 class="label">Architect / Lead / Developer</h2>
+    		</div>
+    
+    		<span class="location">
+    			<span class="postalCode">8051,</span>
+    			<span class="city">Graz,</span>
+    			<span class="region">Styria</span>
+    			<span class="countryCode">AT</span>
+    		</span>
+    
+    
+    		<div id="contact">
+    			<div class="email">
+    				<span class="far fa-envelope"></span>
+    				<a class="hide-href-print" href="mailto:dionis2384@gmail.com">dionis2384@gmail.com</a>
+    			</div>
+    			<div class="phone">
+    				<span class="fas fa-mobile-alt"></span>
+    				<a class="hide-href-print" href="tel:+43 677 610 47776">+43 677 610 47776</a>
+    			</div>
+    		</div>
+    
+    		<div id="profiles">
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-linkedin linkedin social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://www.linkedin.com/in/oleksandr-chumachov-a030776/">oleksandr-chumachov-a030776</a>
+    					</span>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-gethub gethub social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://github.com/achumachev">achumachev</a>
+    					</span>
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    
+    	<section class="section">
+    		<section class="main-summary">
+    			<div><p><p>Great architectural, programming and leadership experience</p><p>• Full stack knowledge with: AWS, Docker, Java, JavaScript, Linux/Shell, SQL/RDBMS,</p><p>noSQL etc</p><p>• Self-motivated, goal oriented, code pedantic, fast, skilled in management, domain oriented.</p></p></div>
+    		</section>
+    	</section>
+    
+    <section class="section">
+    	<header>
+    		<h2 class='section-title'>Skills</h2>
+    	</header>
+    	<section id="skills">
+    		<div class="item">
+    			<h3 class="name">
+    				Architecture
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Microservices</li>
+    				<li>UML</li>
+    				<li>C4</li>
+    				<li>Streaming</li>
+    				<li>Messaging</li>
+    				<li>Pub/Sub</li>
+    				<li>Cloud</li>
+    				<li>Event Driven Architecture</li>
+    				<li>CAP</li>
+    				<li>SaaS</li>
+    				<li>PaaS</li>
+    				<li>CQRS</li>
+    				<li>Saga</li>
+    				<li>Sharding</li>
+    				<li>Replication</li>
+    				<li>Scaling</li>
+    				<li>Tracing</li>
+    				<li>OAuth</li>
+    				<li>OpenAPI</li>
+    				<li>AsyncAPI</li>
+    				<li>Cloud Computing</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Programming Languages
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Java</li>
+    				<li>Kotlin</li>
+    				<li>Groovy</li>
+    				<li>JavaScript</li>
+    				<li>TypeScript</li>
+    				<li>Python</li>
+    				<li>SQL</li>
+    				<li>sh</li>
+    				<li>C++</li>
+    				<li>C$</li>
+    				<li>PHP</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				JVM
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Spring</li>
+    				<li>Spring MVC</li>
+    				<li>Spring Security</li>
+    				<li>Spring Data</li>
+    				<li>Spring Cloud</li>
+    				<li>Hibernate</li>
+    				<li>JUnit</li>
+    				<li>J2EE</li>
+    				<li>JDBC</li>
+    				<li>JMS</li>
+    				<li>JPA</li>
+    				<li>JSP</li>
+    				<li>Servlets</li>
+    				<li>JAXB</li>
+    				<li>JAX-RS</li>
+    				<li>Apache Camel</li>
+    				<li>Tomcat</li>
+    				<li>JBoss</li>
+    				<li>GlassFish</li>
+    				<li>Struts</li>
+    				<li>GWT</li>
+    				<li>Echo</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Build tools
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>npm</li>
+    				<li>Gradle</li>
+    				<li>Maven</li>
+    				<li>Make</li>
+    				<li>Ant</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Backend Development
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Object-oriented programming</li>
+    				<li>Test Driven Development</li>
+    				<li>GRASP</li>
+    				<li>SOLID</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Web
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>HTML</li>
+    				<li>CSS</li>
+    				<li>XML</li>
+    				<li>XSLT</li>
+    				<li>XPath</li>
+    				<li>JSON</li>
+    				<li>AJAX</li>
+    				<li>GraphQL</li>
+    				<li>WebSockets</li>
+    				<li>Angular</li>
+    				<li>JQuery</li>
+    				<li>canJS</li>
+    				<li>prototypejs</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Databases
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Postgres</li>
+    				<li>MySQL</li>
+    				<li>Oracle DB</li>
+    				<li>MariaDB</li>
+    				<li>MongoDB</li>
+    				<li>DynamoDB</li>
+    				<li>InfluxDB</li>
+    				<li>Prometheus</li>
+    				<li>Redis</li>
+    				<li>Casandra</li>
+    				<li>Neo4j</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Source Control
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Git</li>
+    				<li>CVS</li>
+    				<li>SVN</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Amazon Web Services (AWS)
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>EC2</li>
+    				<li>IAM</li>
+    				<li>S3</li>
+    				<li>EKS</li>
+    				<li>MKS</li>
+    				<li>KMS</li>
+    				<li>ELB</li>
+    				<li>Route 53</li>
+    				<li>Lambda</li>
+    				<li>DynamoDB</li>
+    				<li>ElastiCache</li>
+    				<li>etc</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Messaging and other
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Kafka</li>
+    				<li>RabbitMQ</li>
+    				<li>ActiveMQ</li>
+    				<li>Kafka Streams</li>
+    				<li>Zookeeper</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Containerization
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Docker</li>
+    				<li>Kubernetes</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				CI/CD
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Jenkins</li>
+    				<li>Bamboo</li>
+    				<li>TeamCity</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Etc
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Grafana</li>
+    				<li>Jira</li>
+    				<li>Confluence</li>
+    			</ul>
+    		</div>
+    	</section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Work Experience <span class="item-count">(10)</span></h2>
+      </header>
+    
+      <section id="work">
+        <section class="work-item">
+    
+          <label for="work-item-0"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Feb 2023</span>
+              <span class="endDate">- Current</span>
+            </div>
+            <div class="position">Solutions Architect</div>
+            <div class="company">Ukrainian Processing Center</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Remote</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.linkedin.com/company/jsc-ukrainian-processing-center-/">https://www.linkedin.com/company/jsc-ukrainian-processing-center-/</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>Architectural solutions, Team management, Code review, Integrations with internal and 3rd party systems</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Microservices</p></p></li>
+              <li><p><p>Kafka</p></p></li>
+              <li><p><p>AWS</p></p></li>
+              <li><p><p>Docker, K8N</p></p></li>
+              <li><p><p>Java, JavaScript/TypeScript, Python</p></p></li>
+              <li><p><p>PostgreSQL, DynamoDB, S3, Redis, Prometheus</p></p></li>
+              <li><p><p>gradle, maven</p></p></li>
+              <li><p><p>git</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-1"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Apr 2021</span>
+              <span class="endDate">- Jan 2023</span>
+            </div>
+            <div class="position">Java Developer / Architect</div>
+            <div class="company">Reach Financial</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Remote</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.linkedin.com/company/reach-financial/">https://www.linkedin.com/company/reach-financial/</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>Architectural solutions, Development new functionality, Bug fixing, Code review, Integrations with 3rd party systems</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Microservices</p></p></li>
+              <li><p><p>Kafka</p></p></li>
+              <li><p><p>AWS: EKS, EC2, KMS, MKS, S3, etc</p></p></li>
+              <li><p><p>Java: Spring, Hibernate, JPA etc</p></p></li>
+              <li><p><p>Gradle</p></p></li>
+              <li><p><p>MySQL, Redis, Prometheus</p></p></li>
+              <li><p><p>Docker, K8N</p></p></li>
+              <li><p><p>git</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-2"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Aug 2016</span>
+              <span class="endDate">- Apr 2021</span>
+            </div>
+            <div class="position">Architect / Software Developer</div>
+            <div class="company">Lexalytics, Inc. an InMoment Company</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Remote</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.linkedin.com/company/lexalytics/">https://www.linkedin.com/company/lexalytics/</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>Architectural solutions, Total re-design and then implement of the system with splitting monolith to microservices, Develop administrative web portals</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Microservices</p></p></li>
+              <li><p><p>SaaS</p></p></li>
+              <li><p><p>AWS</p></p></li>
+              <li><p><p>Java(Spring, Hibernate, MyBatis etc)</p></p></li>
+              <li><p><p>JS (typescript, angularJS, nodeJs, npm)</p></p></li>
+              <li><p><p>C++</p></p></li>
+              <li><p><p>C#, Excel Plugin</p></p></li>
+              <li><p><p>Maven</p></p></li>
+              <li><p><p>Postgresql, MariaDB, Redis, InfluxDB, Prometheus</p></p></li>
+              <li><p><p>Docker</p></p></li>
+              <li><p><p>RabbitMQ</p></p></li>
+              <li><p><p>Chef, knife, shell</p></p></li>
+              <li><p><p>svn, git</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-3"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Apr 2012</span>
+              <span class="endDate">- Aug 2016</span>
+            </div>
+            <div class="position">Dev Lead / Software Engineer / Tech Lead</div>
+            <div class="company">Omnigon Communications LLC</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Remote, New York, Los Angeles</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.linkedin.com/company/omnigon-communications-llc/">https://www.linkedin.com/company/omnigon-communications-llc/</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>Architecture solutions, Task planning, Development, Code review, DevOps support, Meeting with clients and involving in functional decisions</p></p></div>
+            <ul class="highlights">
+              <li><p><p>AWS: EC2, S3, DynamoDB</p></p></li>
+              <li><p><p>shell</p></p></li>
+              <li><p><p>mvn</p></p></li>
+              <li><p><p>CQ/AEM</p></p></li>
+              <li><p><p>java (Spring, Hibernate etc)</p></p></li>
+              <li><p><p>Groovy</p></p></li>
+              <li><p><p>MongoDB</p></p></li>
+              <li><p><p>JS (canJS, requireJS, JQuery, etc)</p></p></li>
+              <li><p><p>HTML/CSS (LESS and SASS)</p></p></li>
+              <li><p><p>Zookeeper</p></p></li>
+              <li><p><p>svn, git</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-4"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Dec 2011</span>
+              <span class="endDate">- Apr 2012</span>
+            </div>
+            <div class="position">Java (LifeRay) Developer</div>
+            <div class="company">Krusche &amp; Company</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Mykolaiv</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://kruschecompany.com/de/">https://kruschecompany.com/de/</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>Features development, Bug fixing</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Java (spring, hibernate)</p></p></li>
+              <li><p><p>Liferay</p></p></li>
+              <li><p><p>Javascript</p></p></li>
+              <li><p><p>Ant</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-5"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jan 2010</span>
+              <span class="endDate">- Dec 2011</span>
+            </div>
+            <div class="position">Team lead / Architect / Manager / Java Developer</div>
+            <div class="company">Sintez Technologies</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Mykolaiv</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.linkedin.com/company/sintez-technologies/">https://www.linkedin.com/company/sintez-technologies/</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>Features planning and development, Sprint planning, Task management, Documentation writing, Communications with project owners</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Java (EE, EJB, Servlet, GWT, Vaadin)</p></p></li>
+              <li><p><p>GlassFish</p></p></li>
+              <li><p><p>Flash/Flex</p></p></li>
+              <li><p><p>Postresql</p></p></li>
+              <li><p><p>Maven</p></p></li>
+              <li><p><p>linux, shell</p></p></li>
+              <li><p><p>svn, git</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-6"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Nov 2008</span>
+              <span class="endDate">- Dec 2010</span>
+            </div>
+            <div class="position">Java Developer / Software Architect / Team Lead</div>
+            <div class="company">GeeksForLess</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Mykolaiv</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.linkedin.com/company/geeksforless/">https://www.linkedin.com/company/geeksforless/</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>Task management, team leading (code review, helping with studies etc), Architecture solutions, Feature development &amp; bug fixing</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Java (Spring, EE, GWT, Echo, Jsp, Servlets, Hibernate)</p></p></li>
+              <li><p><p>Maven</p></p></li>
+              <li><p><p>linux, shell</p></p></li>
+              <li><p><p>MySQL, Oracle</p></p></li>
+              <li><p><p>SVN, GIT, Jira, Maven, Ant</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-7"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jun 2008</span>
+              <span class="endDate">- Nov 2008</span>
+            </div>
+            <div class="position">Java Developer</div>
+            <div class="company">TemplateMonster.com</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Mykolaiv</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.linkedin.com/company/templatemonster/">https://www.linkedin.com/company/templatemonster/</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>Development java application sites.</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Java (EE, EJB, JPA, GWT, Struts, JSP, Servlets)</p></p></li>
+              <li><p><p>MySQL</p></p></li>
+              <li><p><p>SVN, CVS</p></p></li>
+              <li><p><p>linux</p></p></li>
+              <li><p><p>JBoss</p></p></li>
+              <li><p><p>ant</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-8"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jun 2007</span>
+              <span class="endDate">- Jun 2008</span>
+            </div>
+            <div class="position">Interface programmer&#x27;s Department Manager</div>
+            <div class="company">TemplateMonster.com</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Mykolaiv</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.linkedin.com/company/templatemonster/">https://www.linkedin.com/company/templatemonster/</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>Mostly supervising. From time-to-time development on PHP and Java EE, Html, CSS</p></p></div>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-9"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Nov 2006</span>
+              <span class="endDate">- Jun 2007</span>
+            </div>
+            <div class="position">Interface programmer</div>
+            <div class="company">TemplateMonster.com</div>
+          </header>
+    
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="location">Mykolaiv</span>
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.linkedin.com/company/templatemonster/">https://www.linkedin.com/company/templatemonster/</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>Front end development with small part of PHP and Java EE</p></p></div>
+            <ul class="highlights">
+              <li><p><p>HTML, CSS</p></p></li>
+              <li><p><p>JavaScript</p></p></li>
+              <li><p><p>PHP</p></p></li>
+              <li><p><p>Java (EE, EJB, JPA, GWT, Struts, JSP, Servlets)</p></p></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Projects <span class="item-count">(5)</span></h2>
+      </header>
+      <section id="projects">
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">T.com</div>
+          </header>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.templates.com">https://www.templates.com</a>
+          </span>
+          <div class="item">
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">TemplateMonster</div>
+          </header>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.templatemonster.com">https://www.templatemonster.com</a>
+          </span>
+          <div class="item">
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">Audubon</div>
+          </header>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.audubon.org">https://www.audubon.org</a>
+          </span>
+          <div class="item">
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">Semantria</div>
+          </header>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.lexalytics.com/semantria/">https://www.lexalytics.com/semantria/</a>
+          </span>
+          <div class="item">
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">PGATour.com</div>
+          </header>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.pgatour.com/">https://www.pgatour.com/</a>
+          </span>
+          <div class="item">
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Education <span class="item-count">(1)</span></h2>
+      </header>
+    
+      <section id="education">
+        <section class="education-item">
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">
+              2001
+              </span>
+              <span class="endDate">
+              - 2007
+              </span>
+            </div>
+            <div class="header-left">
+              <div class="area">
+                Information systems and technologies
+              </div>
+              <div class="institution">
+                National University of Shipbuilding
+              </div>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+          </div>
+        </section>
+      </section>
+    </section>
+      <section class="section">
+        <header>
+          <h2 class="section-title">Certificates</h2>
+        </header>
+        <section id="certificates">
+            <section class="certificate-item">
+              <header class="clear">
+                <div class="header-left">
+                    <div class="name">
+                      M101J: MongoDB for Java Developers
+                    </div>
+                    <div class="issuer">
+                      10gen
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fas fa-external-link-alt"></span>
+                    <a target="_blank" href="http://education.10gen.com/downloads/certificates/97e05ceeddc8405b82137c52b03bbe71/Certificate.pdf">http://education.10gen.com/downloads/certificates/97e05ceeddc8405b82137c52b03bbe71/Certificate.pdf</a>
+                  </span>
+              </div>
+            </section>
+        </section>
+      </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Languages</h2>
+      </header>
+      <section id="languages">
+        <div class="display">
+          <h3 class="language">
+            English
+          </h3>
+          <div class="item">
+            <div class="level fluency fluent">
+              <em>Fluent</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <h3 class="language">
+            Russian
+          </h3>
+          <div class="item">
+            <div class="level fluency native speaker">
+              <em>Native speaker</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <h3 class="language">
+            Ukrainian
+          </h3>
+          <div class="item">
+            <div class="level fluency native speaker">
+              <em>Native speaker</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <h3 class="language">
+            German
+          </h3>
+          <div class="item">
+            <div class="level fluency beginner">
+              <em>Beginner</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title' class='section-title'>Interests</h2>
+      </header>
+      <section id="interests">
+        <div class="item">
+          <h3 class="name">
+            Sports Fan
+          </h3>
+          <ul class="keywords">
+            <li>Football</li>
+            <li>American Football</li>
+            <li>Basketball</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            IoT
+          </h3>
+          <ul class="keywords">
+            <li>ESP32</li>
+            <li>Arduino</li>
+            <li>Electronics</li>
+            <li>Microcontrollers</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Etc
+          </h3>
+          <ul class="keywords">
+            <li>Audiobooks</li>
+            <li>Movies &amp; TV</li>
+            <li>Hiking</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+  </body>
+</html>
