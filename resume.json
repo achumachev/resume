@@ -5,9 +5,8 @@
         "label": "Architect / Lead / Developer",
         "image": "https://avatars.githubusercontent.com/u/1453383",
         "email": "dionis2384@gmail.com",
-        "phone": "+43 677 610 47776",
         "url": "https://registry.jsonresume.org/achumachev?theme=stackoverflow",
-        "summary": " Great architectural, programming and leadership experience\n• Full stack knowledge with: AWS, Docker, Java, JavaScript, Linux/Shell, SQL/RDBMS,\nnoSQL etc\n• Self-motivated, goal oriented, code pedantic, fast, skilled in management, domain oriented.",
+        "summary": "Extensive architectural, programming, and leadership experience\n\nFull stack expertise with technologies including AWS, Docker, Java, JavaScript, Linux/Shell, SQL/RDBMS, and NoSQL\nSelf-motivated, goal-oriented, meticulous about code quality, quick, skilled in management, and domain-focused",
         "location": {
             "countryCode": "AT",
             "postalCode": "8051",
@@ -29,10 +28,29 @@
     },
     "work": [
         {
+            "name": "ARRISE",
+            "description": "ARRISE powers Pragmatic Play, a leading supplier of player-favourite content to the iGaming industry.",
+            "position": "Java Developer",
+            "startDate": "2024-07-03",
+            "summary": "Implementation of new features",
+            "highlights": [
+                "Java",
+                "Microservices",
+                "Docker",
+                "RabbitMQ",
+                "PostgreSQL, Redis, Prometheus",
+                "maven",
+                "git",
+                "consul"
+            ],
+            "location": "Remote"
+        },
+        {
             "name": "Ukrainian Processing Center",
             "description": "Raiffeisen Bank International Group",
             "position": "Solutions Architect",
             "startDate": "2023-02-01",
+            "endDate": "2024-06-21",
             "summary": "Architectural solutions, Team management, Code review, Integrations with internal and 3rd party systems",
             "highlights": [
                 "Microservices",
@@ -381,7 +399,8 @@
                 "RabbitMQ",
                 "ActiveMQ",
                 "Kafka Streams",
-                "Zookeeper"
+                "Zookeeper",
+                "Consul"
             ]
         },
         {
