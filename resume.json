@@ -20,7 +20,7 @@
                 "url": "https://www.linkedin.com/in/oleksandr-chumachov-a030776/"
             },
             {
-                "network": "GetHub",
+                "network": "GitHub",
                 "username": "achumachev",
                 "url": "https://github.com/achumachev"
             }
@@ -28,9 +28,28 @@
     },
     "work": [
         {
+            "name": "PIN-UP",
+            "description": "PIN-UP Global is an international holding specializing in the development and implementation of advanced technologies, B2B solutions and innovative products for the iGaming industry.",
+            "position": "Software Architect",
+            "startDate": "2024-10-21",
+            "summary": "Preparing architecture visions for various projects and services",
+            "highlights": [
+                "Go",
+                "JavaScript/TypeScript",
+                "Asterix",
+                "Microservices",
+                "NATS/JetStream",
+                "AWS: EKS, S3, etc",
+                "PostgreSQL, Redis",
+                "Docker, K8N",
+                "git"
+            ]
+        },
+        {
             "name": "ARRISE",
             "description": "ARRISE powers Pragmatic Play, a leading supplier of player-favourite content to the iGaming industry.",
             "position": "Java Developer",
+            "endDate": "2024-10-14",
             "startDate": "2024-07-03",
             "summary": "Implementation of new features",
             "highlights": [
@@ -46,7 +65,7 @@
             "location": "Remote"
         },
         {
-            "name": "Ukrainian Processing Center",
+            "name": "Raiffeisen Bank UA, Ukrainian Processing Center",
             "description": "Raiffeisen Bank International Group",
             "position": "Solutions Architect",
             "startDate": "2023-02-01",
@@ -274,6 +293,7 @@
             "name": "Programming Languages",
             "keywords": [
                 "Java",
+                "Go",
                 "Kotlin",
                 "Groovy",
                 "JavaScript",
@@ -345,6 +365,7 @@
                 "GraphQL",
                 "WebSockets",
                 "Angular",
+                "VueJS",
                 "JQuery",
                 "canJS",
                 "prototypejs"
@@ -399,6 +420,7 @@
                 "RabbitMQ",
                 "ActiveMQ",
                 "Kafka Streams",
+                "NATS/JetStream",
                 "Zookeeper",
                 "Consul"
             ]
@@ -424,7 +446,8 @@
             "keywords": [
                 "Grafana",
                 "Jira",
-                "Confluence"
+                "Confluence",
+                "PlantUML"
             ]
         }
     ],
