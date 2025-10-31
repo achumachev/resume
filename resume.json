@@ -5,7 +5,7 @@
         "label": "Architect / Lead / Developer",
         "image": "https://avatars.githubusercontent.com/u/1453383",
         "email": "dionis2384@gmail.com",
-        "url": "https://registry.jsonresume.org/achumachev?theme=stackoverflow",
+        "url": "https://chumachov.com",
         "summary": "Extensive architectural, programming, and leadership experience\n\nFull stack expertise with technologies including AWS, Docker, Java, JavaScript, Linux/Shell, SQL/RDBMS, and NoSQL\nSelf-motivated, goal-oriented, meticulous about code quality, quick, skilled in management, and domain-focused",
         "location": {
             "countryCode": "AT",
@@ -28,19 +28,20 @@
     },
     "work": [
         {
-            "name": "PIN-UP",
-            "description": "PIN-UP Global is an international holding specializing in the development and implementation of advanced technologies, B2B solutions and innovative products for the iGaming industry.",
+            "name": "PIN-UP/RedCore",
+            "description": "RedCore is an international business group focused on developing and implementing innovative solutions for digital markets.",
             "position": "Software Architect",
             "startDate": "2024-10-21",
             "summary": "Preparing architecture visions for various projects and services",
             "highlights": [
                 "Go",
+                "Python",
                 "JavaScript/TypeScript",
-                "Asterix",
+                "Asterisk",
                 "Microservices",
                 "NATS/JetStream",
                 "AWS: EKS, S3, etc",
-                "PostgreSQL, Redis",
+                "PostgreSQL, Redis, MongoDB, ElasticSearch, ClickHouse",
                 "Docker, K8N",
                 "git"
             ]
@@ -256,7 +257,6 @@
             "url": "https://www.nuos-international.com.ua",
             "startDate": "2001-09-01",
             "endDate": "2007-02-28",
-            "score": "",
             "courses": []
         }
     ],
@@ -384,7 +384,9 @@
                 "Prometheus",
                 "Redis",
                 "Casandra",
-                "Neo4j"
+                "Neo4j",
+                "ClickHouse",
+                "ElasticSearch"
             ]
         },
         {
@@ -447,7 +449,12 @@
                 "Grafana",
                 "Jira",
                 "Confluence",
-                "PlantUML"
+                "PlantUML",
+                "Cloudflare",
+                "GitHub",
+                "GitLab",
+                "Backstage",
+                "Bitbucket"
             ]
         }
     ],

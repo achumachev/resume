@@ -15,7 +15,7 @@
   "scripts": {
     "help": "resume --help",
     "validate": "resume validate",
-    "pdf": "resume export --theme stackoverflow cv.pdf",
+    "pdf": "resume export --theme stackoverflow public/cv.pdf",
     "serve": "resume serve --theme stackoverflow"
   }
 }
